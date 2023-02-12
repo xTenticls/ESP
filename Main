@@ -159,7 +159,7 @@ function ESP:Get_Health(Player)
     if Character then
         local Humanoid = Character:FindFirstChildOfClass("FakeHumanoid")
         if Humanoid then
-            return Humanoid.Health
+            return FakeHumanoid.Value
         end
     end
     return 100
